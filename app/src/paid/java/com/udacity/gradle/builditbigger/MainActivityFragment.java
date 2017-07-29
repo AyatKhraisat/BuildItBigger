@@ -1,4 +1,4 @@
-package com.example.gradle.builditbigger.paid;
+package com.udacity.gradle.builditbigger;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,9 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-
-import com.udacity.gradle.builditbigger.EndpointsAsyncTask;
-import com.udacity.gradle.builditbigger.R;
 
 public class MainActivityFragment extends Fragment {
 

@@ -1,4 +1,4 @@
-package com.example.gradle.builditbigger.free;
+package com.udacity.gradle.builditbigger;
 
 
 import android.os.Bundle;
@@ -10,8 +10,6 @@ import android.widget.Button;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.udacity.gradle.builditbigger.EndpointsAsyncTask;
-import com.udacity.gradle.builditbigger.R;
 
 
 /**

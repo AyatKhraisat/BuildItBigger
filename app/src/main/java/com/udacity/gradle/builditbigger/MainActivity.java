@@ -5,8 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.gradle.builditbigger.free.MainActivityFragment;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,11 +12,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        MainActivityFragment mainActivityFragment = new MainActivityFragment();
-        getSupportFragmentManager().beginTransaction().add(R.id.fragmentContainer, mainActivityFragment).commit();
+
+           MainActivityFragment mainActivityFragment = new MainActivityFragment();
+            getSupportFragmentManager().beginTransaction().add(R.id.fragmentContainer, mainActivityFragment).commit();
+
 
     }
-
+    public boolean isPaid() {
+        return getPackageName().equals("com.udacity.gradle.builditbigger.paid");
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

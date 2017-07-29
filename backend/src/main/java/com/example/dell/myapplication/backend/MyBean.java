@@ -1,17 +1,20 @@
 package com.example.dell.myapplication.backend;
 
+import com.udacity.gradle.jokes.Joker;
+
 /**
  * The object model for the data we are sending through endpoints
  */
 public class MyBean {
 
-    private String myData;
+    private Joker myJoke;
 
     public String getData() {
-        return myData;
+        return myJoke.getJoke();
     }
 
-    public void setData(String data) {
-        myData = data;
+
+    public MyBean() {
+        myJoke = new Joker();
     }
 }
